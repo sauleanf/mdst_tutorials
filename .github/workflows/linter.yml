@@ -1,4 +1,4 @@
-name: PyTest
+name: Linter
 
 on:
   push:
@@ -22,4 +22,4 @@ jobs:
         python -m pip install -r ./requirements.txt
     - name: Run Tests
       run: |
-        python -m pytest -vv
+        python -m pylama .
